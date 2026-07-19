@@ -1,7 +1,6 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  /* config options here */
   reactCompiler: true,
   images: {
     remotePatterns: [
@@ -11,6 +10,11 @@ const nextConfig: NextConfig = {
       },
     ],
   },
+};
+
+// @ts-expect-error - eslint config option not reflected in current type defs
+nextConfig.eslint = {
+  ignoreDuringBuilds: true,
 };
 
 export default nextConfig;

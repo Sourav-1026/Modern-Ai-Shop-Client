@@ -10,6 +10,10 @@ const db = client.db(process.env.DB_NAME || "modernaishop_db");
 
 export const auth = betterAuth({
   database: mongodbAdapter(db),
+  trustedOrigins: [
+    "http://localhost:3000",
+    "https://modern-ai-shop-client.vercel.app",
+  ],
   session: {
     cookieCache: {
       enabled: true,
@@ -19,6 +23,7 @@ export const auth = betterAuth({
   },
   emailAndPassword: {
     enabled: true,
+    autoSignIn: false,
   },
   socialProviders: {
     google: {
