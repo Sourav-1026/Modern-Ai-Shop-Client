@@ -1,36 +1,47 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🛍️ Modern AI Shop
 
-## Getting Started
+**Modern AI Shop** is a full-stack e-commerce web application that helps users discover and buy products through **AI-powered recommendations** — learning from browsing behavior and preferences to surface exactly what shoppers are looking for, faster.
 
-First, run the development server:
+---
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## 🚀 Features
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### 1. 🔐 Authentication (Email & Google)
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Users can sign up and log in using their email and password, or instantly access the platform via **Google OAuth** — making onboarding fast and frictionless.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### 2. 🛒 Product Catalog
 
-## Learn More
+Browse a wide range of products across categories, with detailed listings including images, pricing, descriptions.
 
-To learn more about Next.js, take a look at the following resources:
+### 3. 🤖 AI Product Recommendations
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+A smart recommendation engine analyzes browsing history, purchase patterns, and preferences to suggest personalized products — helping users discover items they're most likely to love.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+### 4. 🔍 Smart Search & Filtering
 
-## Deploy on Vercel
+Find products quickly with keyword search combined with filters for category, price range, and ratings.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### 5. 🛍️ Cart & Checkout
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Add products to a cart, review product details.
+
+### 6. 📦 Order Management
+
+Users can view their created product history, view the product, and also delete the product.
+
+---
+
+## 🛠️ Tech Stack
+
+- **Frontend:** Next.js, Tailwind CSS, Framer Motion, Hero UI
+- **Backend:** Node.js / Express
+- **Auth:** Better Auth (Email + Google OAuth)
+- **Database:** MongoDB
+- **AI:** Recommendation engine (add model/provider details here)
+
+---
+
+## 🌐 Live Demo
+
+https://modern-ai-shop-client.vercel.app
